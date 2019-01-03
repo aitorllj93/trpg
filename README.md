@@ -1,6 +1,9 @@
 
 # Typed RPG
 
+![](https://raw.githubusercontent.com/aitorllj93/trpg/master/logo200x200.png)
+
+
 Typed RPG it's a unofficial packages repository for one of the most popular RPG games maker, RPG Maker MV (RMMV) by KADOKAWA.
 It's purpose is to enable interaction between this nice framework with TypeScript common frameworks, such as Express and Open Api Specification in server-side, and Angular and other component rendering frameworks on client.
 
