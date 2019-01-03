@@ -29,7 +29,6 @@ The estimated roadmap of this project should be:
 - - Jobs Systems?
 
 **3nd Phase, Standarization**
-- Models Repository for data interfaces
 - REST Server with all types of resources compatible with Swagger, OpenApi...
 - GraphQl Server on top of REST layer
 - Command Server Handlers for data manipulation
