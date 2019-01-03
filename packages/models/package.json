@@ -1,0 +1,9 @@
+{
+  "name": "@trpg/models",
+  "version": "1.0.0",
+  "description": "TypeScript Models for RPG Maker",
+  "main": "src/index.ts",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
