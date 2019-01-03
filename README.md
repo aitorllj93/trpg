@@ -1,7 +1,10 @@
 
 # Typed RPG
 
-Typed RPG it's a unofficial packages repository for one of the most popular RPG games maker, RPG Maker MV (RMMV) by KADOKAWA.
+![](https://raw.githubusercontent.com/aitorllj93/trpg/master/logo200x200.png)
+
+
+Typed RPG it's an unofficial packages repository for one of the most popular RPG games maker, RPG Maker MV (RMMV) by KADOKAWA.
 It's purpose is to enable interaction between this nice framework with TypeScript common frameworks, such as Express and Open Api Specification in server-side, and Angular and other component rendering frameworks on client.
 
 Everyone can help and contribute to the source.
@@ -25,19 +28,18 @@ The estimated roadmap of this project should be:
 - - Growth Charts formulas support
 - - Jobs Systems?
 
-**3nd Phase, Standarization**
-- Models Repository for data interfaces
+**3rd Phase, Standarization**
 - REST Server with all types of resources compatible with Swagger, OpenApi...
 - GraphQl Server on top of REST layer
 - Command Server Handlers for data manipulation
 
-**4rd Phase, More Components**
+**4th Phase, More Components**
 - Actors Relationships
 - Battle System Simulator
 - World Editor
 - Project scaffolding
 
-**5rd Phase, Events Sourcing**
+**5th Phase, Events Sourcing**
 - Events Single Source of Thruth database
 - Events Manipulation Layer (needed in order to visualize filter, undo, and reapply changes on the network GIT) 
 - Aggregates, JSON Patch to apply "data commits"
