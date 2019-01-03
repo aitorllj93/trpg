@@ -28,18 +28,18 @@ The estimated roadmap of this project should be:
 - - Growth Charts formulas support
 - - Jobs Systems?
 
-**3nd Phase, Standarization**
+**3rd Phase, Standarization**
 - REST Server with all types of resources compatible with Swagger, OpenApi...
 - GraphQl Server on top of REST layer
 - Command Server Handlers for data manipulation
 
-**4rd Phase, More Components**
+**4th Phase, More Components**
 - Actors Relationships
 - Battle System Simulator
 - World Editor
 - Project scaffolding
 
-**5rd Phase, Events Sourcing**
+**5th Phase, Events Sourcing**
 - Events Single Source of Thruth database
 - Events Manipulation Layer (needed in order to visualize filter, undo, and reapply changes on the network GIT) 
 - Aggregates, JSON Patch to apply "data commits"
