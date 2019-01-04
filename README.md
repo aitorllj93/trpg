@@ -13,13 +13,13 @@ The estimated roadmap of this project should be:
 
 **1st Phase, MVP**
 - [REST](https://restfulapi.net/) Server with common types of resources
-- Models data repository [Ref](https://www.typescriptlang.org/docs/handbook/classes.html)
-- Angular Examples with components [Ref](https://angular.io/guide/architecture-components)
+- [TypeScript](https://www.typescriptlang.org/docs/handbook/classes.html) Models data repository
+- [Angular]((https://angular.io/guide/architecture-components) Examples with components
 - Configuration layers
 
 **2nd Phase, 3rd Party Integrations**
 
-- Support Plugins and Annotations tags [Ref](https://forums.rpgmakerweb.com/index.php?threads/i-want-to-start-scipting-for-mv.56615/)
+- Support [Plugins](https://forums.rpgmakerweb.com/index.php?threads/i-want-to-start-scipting-for-mv.56615/) and Annotations tags
 - Integrations: [Yanfly Engine?](http://yanfly.moe/yep/)
 - Example: Story Planner Initial Version
 - - Characters BIO with Event based Fragments Support
