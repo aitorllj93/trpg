@@ -5,7 +5,7 @@
 
 
 Typed RPG it's an unofficial packages repository for one of the most popular RPG games maker, [RPG Maker MV (RMMV) by KADOKAWA.](http://www.rpgmakerweb.com/products/programs/rpg-maker-mv)
-It's purpose is to enable interaction between this nice framework with TypeScript common frameworks, such as Express and Open Api Specification in server-side, and Angular and other component rendering frameworks on client.
+It's purpose is to enable interaction between this nice framework with TypeScript common frameworks, such as [Express](https://expressjs.com/es/) and [Open Api Specification](https://www.openapis.org/) in server side, and [Angular](https://angular.io/) and other component rendering frameworks on client.
 
 Everyone can help and contribute to the source.
 
