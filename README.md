@@ -12,7 +12,7 @@ Everyone can help and contribute to the source.
 The estimated roadmap of this project should be:
 
 **1st Phase, MVP**
-- REST Server with common types of resources [Ref](https://restfulapi.net/)
+- [REST](https://restfulapi.net/) Server with common types of resources
 - Models data repository [Ref](https://www.typescriptlang.org/docs/handbook/classes.html)
 - Angular Examples with components [Ref](https://angular.io/guide/architecture-components)
 - Configuration layers
