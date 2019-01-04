@@ -6,8 +6,8 @@ const routes: Routes = [
     path: 'actors',
     loadChildren: './actors/actors.module#ActorsModule'
   },
-  { path: '',   redirectTo: '/actors/1', pathMatch: 'full' },
-  { path: '**', redirectTo: '/actors/1' }
+  { path: '',   redirectTo: '/actors', pathMatch: 'full' },
+  { path: '**', redirectTo: '/actors' }
 ];
 
 @NgModule({

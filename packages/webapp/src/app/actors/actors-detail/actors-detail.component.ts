@@ -16,8 +16,7 @@ import { ActorsService } from '../actors.service';
       <code>{{ actor | json }}</code>
     </pre>
   </ng-container>
-  `,
-  styleUrls: ['./actors-detail.component.scss']
+  `
 })
 export class ActorsDetailComponent implements OnInit {
 
