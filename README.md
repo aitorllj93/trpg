@@ -12,15 +12,15 @@ Everyone can help and contribute to the source.
 The estimated roadmap of this project should be:
 
 **1st Phase, MVP**
-- REST Server with common types of resources 
-- Models data repository
-- Angular Examples with components
+- REST Server with common types of resources [Ref](https://restfulapi.net/)
+- Models data repository [Ref](https://www.typescriptlang.org/docs/handbook/classes.html)
+- Angular Examples with components [Ref](https://angular.io/guide/architecture-components)
 - Configuration layers
 
 **2nd Phase, 3rd Party Integrations**
 
-- Support XML tags 
-- Integrations: Yanfly Engine?
+- Support Plugins and Annotations tags [Ref](https://forums.rpgmakerweb.com/index.php?threads/i-want-to-start-scipting-for-mv.56615/)
+- Integrations: [Yanfly Engine?](http://yanfly.moe/yep/)
 - Example: Story Planner Initial Version
 - - Characters BIO with Event based Fragments Support
 - - Modern UI on Resources Management
@@ -29,9 +29,9 @@ The estimated roadmap of this project should be:
 - - Jobs Systems?
 
 **3rd Phase, Standarization**
-- REST Server with all types of resources compatible with Swagger, OpenApi...
-- GraphQl Server on top of REST layer
-- Command Server Handlers for data manipulation
+- REST Server with all types of resources compatible with [Swagger](https://swagger.io/tools/swagger-codegen/), [OpenApi](https://www.openapis.org/)...
+- [GraphQl Server](https://graphql.org/learn/) on top of REST layer [OpenAPI to GraphQL](https://github.com/strongloop/oasgraph)
+- Command Server Handlers for data manipulation [CQRS](https://martinfowler.com/bliki/CQRS.html)
 
 **4th Phase, More Components**
 - Actors Relationships
@@ -40,11 +40,10 @@ The estimated roadmap of this project should be:
 - Project scaffolding
 
 **5th Phase, Events Sourcing**
-- Events Single Source of Thruth database
-- Events Manipulation Layer (needed in order to visualize filter, undo, and reapply changes on the network GIT) 
-- Aggregates, JSON Patch to apply "data commits"
-- CommandToQuery Transformation Layer Aggregates?
+- Events as Single Source of Truth database [Event Sourcing](https://martinfowler.com/eaaDev/EventSourcing.html)
+- Events Manipulation Layer (needed in order to visualize filter, undo, and reapply changes on the network [GIT](https://www.kenneth-truyers.net/2016/10/13/git-nosql-database/)) 
+- [Aggregates](http://cqrs.nu/Faq/aggregates), [JSONPatch](http://jsonpatch.com/) to transactions/commits
 - Business Layer Separation
-- - ElasticSearch: Logging and search layer
-- - Business Rules Framework (natural language processing?) 
-- Live Editing?
+- - [ElasticSearch](https://www.elastic.co/products/elasticsearch): Logging and search layer
+- - [Business Rules Framework](https://www.ibm.com/support/knowledgecenter/SSQP76_8.9.0/com.ibm.odm.dserver.rules.designer.author/config_auth_topics/con_rd_bom_brl_parts.html) ([natural language processing?](https://medium.com/@datamonsters/13-deep-learning-frameworks-for-natural-language-processing-in-python-2b84a6b6cd98)) 
+- [Live Editing?]([https://socket.io/])
