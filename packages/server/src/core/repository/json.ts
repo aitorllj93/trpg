@@ -25,7 +25,6 @@ export class JsonRepository<Schema extends Entity = Entity> implements Repositor
   constructor(
     private path: string
   ) {
-    console.log(path);
     this.adapter = new JsonAdapter(path);
   }
 

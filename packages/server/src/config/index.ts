@@ -9,6 +9,7 @@ import { EnemiesModule } from './enemies';
 import { StatesModule } from './states';
 import { SkillsModule } from './skills';
 import { MapsModule } from './maps';
+import { ImagesModule } from './images';
 
 export const modules = [
   ...ActorsModule.forRoot({ basePath }),
@@ -19,4 +20,5 @@ export const modules = [
   ...SkillsModule.forRoot({ basePath }),
   ...EnemiesModule.forRoot({ basePath }),
   ...MapsModule.forRoot({ basePath }),
+  ...ImagesModule.forRoot({ basePath }),
 ];

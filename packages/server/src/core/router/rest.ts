@@ -25,8 +25,6 @@ export const RestRouter = <Schema extends Entity = Entity>(
   
   router.get('/:id', async (request: Request, response: Response) => {
     
-    console.log(request.params.id);
-    
     const data = await repository.findById(request.params.id);
 
     response.send(data);

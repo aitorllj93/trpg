@@ -1,5 +1,5 @@
 
-import { readFile, writeFile } from 'fs-extra';
+import { readFile, writeFile, readdir } from 'fs-extra';
 
 import { Repository, Entity } from './interface';
 
@@ -12,6 +12,16 @@ export class FileAdapter {
 
   async write(id: string, content: any) {
     return writeFile(`${this.path}/${id}`, content);
+  }
+
+  async readDir() {
+    return readdir(this.path);
+  }
+
+  async count() {
+    const files = await readdir(this.path);
+    
+    return files.length;
   }
 }
 
@@ -27,11 +37,11 @@ export class FileRepository<Schema extends Entity = Entity> implements Repositor
   }
 
   async load() {
-    this.database =this.adapter;;
+    this.database =this.adapter;
   }
 
   async count() {
-    throw new Error('Not implemented');
+    return this.database.count();
     return 0;
   }
 
@@ -41,15 +51,9 @@ export class FileRepository<Schema extends Entity = Entity> implements Repositor
     limit = 5,
     offset = 0
   ): Promise<Array<Schema>> {
-    throw new Error('Not implemented');
-    return [];
-    /**
-    const content = await this.database.read();
-
-    return [
-      filter(content)
-    ];
-     */
+    const files = await this.adapter.readDir();
+    
+    return files.map(file => ({ id: file } as Schema));
   }
 
   async findById(

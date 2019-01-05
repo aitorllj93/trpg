@@ -117,7 +117,4 @@ export class ActorsModule {
     
     return reality;
   }
-}
-
-ActorsModule.exponentialGrowths();
-  
+}  

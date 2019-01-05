@@ -11,6 +11,27 @@ export class ImagesModule {
     basePath
   } = ImagesModule.defaults) => [
     /******* REPOSITORIES  ***********************/
+    // Characters
+    {
+      type: 'Repository', name: 'CharactersImagesRepository',
+      config: { adapter: 'File', connection: `${basePath}/img/characters` }
+    },
+    // Animations Routers
+    {
+      type: 'Router', name: 'CharactersImagesRouter',
+      deps: [ 'CharactersImagesRepository' ],
+      config: { adapter: 'Rest', baseUrl: '/images/characters' }
+    },
+    {
+      type: 'Repository', name: 'FacesImagesRepository',
+      config: { adapter: 'File', connection: `${basePath}/img/faces` }
+    },
+    // Animations Routers
+    {
+      type: 'Router', name: 'FacesImagesRouter',
+      deps: [ 'FacesImagesRepository' ],
+      config: { adapter: 'Rest', baseUrl: '/images/faces' }
+    },
     // Animations Repositories
     {
       type: 'Repository', name: 'AnimationsImagesRepository',
@@ -19,20 +40,9 @@ export class ImagesModule {
     /******* ROUTERS  ***********************/
     // Animations Routers
     {
-      type: 'Router', name: 'AnimationImagesRouter',
-      deps: [ 'AnimationImagesRepository' ],
+      type: 'Router', name: 'AnimationsImagesRouter',
+      deps: [ 'AnimationsImagesRepository' ],
       config: { adapter: 'Rest', baseUrl: '/images/animations' }
-    },
-    // Animations Repositories
-    {
-      type: 'Repository', name: 'CharactersImagesRepository',
-      config: { adapter: 'File', connection: `${basePath}/img/characters` }
-    }
-    // Animations Routers
-    {
-      type: 'Router', name: 'CharactersImagesRouter',
-      deps: [ 'CharactersImagesRepository' ],
-      config: { adapter: 'Rest', baseUrl: '/images/characers' }
     },
     // Animations Repositories
     {
