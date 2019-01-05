@@ -14,7 +14,6 @@ export class LowDBRepository<Schema extends Entity = Entity> implements Reposito
   constructor(
     path: string
   ) {
-    console.log(path);
     this.adapter = new FileAsync(path);
   }
 

@@ -1,5 +1,5 @@
 
-import { LowDBRepository } from './core/repository';
+import { LowDBRepository, FileRepository } from './core/repository';
 import { RestRouter } from './core/router/rest';
 
 import  express from 'express';
@@ -16,7 +16,20 @@ const port = process.env.PORT || 3000;
 export const types: { [key: string]: any } = {
   
   Repository: async (module: any, _container: any) => {
-    const instance = new LowDBRepository(module.config.connection);
+
+    const repositoryAdapters: {
+      [key: string]: {
+        new(...args: any[]): any;
+      }
+    } = {
+      default: LowDBRepository,
+      LowDB: LowDBRepository,
+      File: FileRepository
+    }
+
+    const builder = repositoryAdapters[module.config.adapter || 'default'];
+
+    const instance = new builder(module.config.connection);
 
     await instance.load();
 
@@ -27,8 +40,13 @@ export const types: { [key: string]: any } = {
     app.use(
       module.config.baseUrl, 
       RestRouter(
-        module.deps.map((dep: any) => 
-          container[dep].instance
+        module.deps.map((dep: any) =>  {
+          if (!container[dep]) {
+            throw new Error(`module ${dep} not found`);
+          }
+
+          return container[dep].instance;
+        }
         )[0]
       )
     )
